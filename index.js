@@ -11,9 +11,9 @@ const cors = require("cors");
 app.use(cors());
 
 // ***********to check the port***********
-app.get("/", async (req, res) => {
-  res.send("Hello this is recipe database.");
-});
+// app.get("/", async (req, res) => {
+//   res.send("Hello this is recipe database.");
+// });
 
 // ***********to add new recipe to database.***********
 async function addNewRecipe(recipe) {
