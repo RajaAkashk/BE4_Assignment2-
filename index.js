@@ -1,7 +1,7 @@
 const Recipes = require("./models/recipe.models");
-const { initializeDatabse } = require("./db/db.connect");
+const { initializeDatabase } = require("./db/db.connect");
 
-initializeDatabse();
+initializeDatabase();
 
 const express = require("express");
 const app = express();
