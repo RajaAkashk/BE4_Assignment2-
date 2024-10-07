@@ -1,5 +1,5 @@
-const Recipes = require("./models/recipe.models");
 const { initializeDatabase } = require("./db/db.connect");
+const Recipes = require("./models/recipe.models");
 
 initializeDatabase();
 
