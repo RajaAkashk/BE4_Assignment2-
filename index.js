@@ -41,7 +41,7 @@ app.post("/recipes", async (req, res) => {
   }
 });
 
-//*************to get all the recipes*************
+//*************  to get all the recipes   *************
 async function allRecipes() {
   try {
     const allData = await Recipes.find();
@@ -62,7 +62,7 @@ app.get("/recipes", async (req, res) => {
       res.status(404).json({ error: "Recipes not found." });
     }
   } catch {
-    res.status(500).json({ error: "Failed to connect to database." });
+    res.status(500).json({ error: "Failed connecting to database." });
   }
 });
 
